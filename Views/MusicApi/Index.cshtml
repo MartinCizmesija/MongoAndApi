@@ -1,0 +1,9 @@
+﻿@model MongoAndApi.ViewModels.NewsViewModel
+
+<div>
+    <h1 style="text-align: center">Music Api</h1>
+    <div style="display: flex; width: 80%; margin: 45px auto; justify-content: space-around;">
+        <button type="button" onclick="location.href='@Url.Action("GetArtist", "MusicApi")'">save artist to db</button>
+        <button type="button" onclick="location.href='@Url.Action("ShowArtists", "MusicApi")'">show saved artist</button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+﻿@model MongoAndApi.ViewModels.NewsViewModel
+
+<div>
+    <h1 style="text-align: center">News Api</h1>
+    <div style="display: flex; width: 80%; margin: 45px auto; justify-content: space-around;">
+        <button type="button" onclick="location.href='@Url.Action("GetNews", "NewsApi")'">save news to db</button>
+        <button type="button" onclick="location.href='@Url.Action("ShowNews", "NewsApi")'">show saved news</button>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+﻿@model MongoAndApi.ViewModels.NewsViewModel
+
+<div>
+    <h1 style="text-align: center; margin-bottom: 30px">News Api</h1>
+
+    @if (Model.articles != null)
+    {
+        <div>
+            @foreach (var article in Model.articles)
+            {
+                <div>
+                    <h3>@article.title</h3>
+                    <p>@article.content</p>
+                    <p>@article.publishedAt</p>
+                </div>
+            }
+        </div>
+    }
+</div>

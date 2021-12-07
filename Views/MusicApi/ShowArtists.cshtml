@@ -1,0 +1,22 @@
+﻿@model MongoAndApi.ViewModels.ArtistsViewModel
+
+<div>
+    <h1 style="text-align: center; margin-bottom: 30px">News Api</h1>
+
+    @if (Model.artists != null)
+    {
+        <div>
+            @foreach (var artist in Model.artists)
+            {
+            <div>
+                <h3>@artist.artist.name</h3>
+                <p>@artist.artist.bio.content</p>
+                @foreach (var similar in artist.artist.similar.artist)
+                {
+                    <p>@similar.name</p>
+                }
+            </div>
+            }
+        </div>
+    }
+</div>
